@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book</title>
+  <style>
+    /* Add your CSS styling here */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #784343;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      
+    }
+
+    form {
+      background-color: #7e2525;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .recipe {
+      background-color: #240e0e;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .recipe img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .recipe-details {
+      display: none;
+    }
+
+    .recipe-details img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+    }
+
+    /* Add more styling as needed */
+  </style>
+</head>
+<body>
+
+  <header>
+   <marquee> <h1>Recipe Book</h1></marquee>
+  </header>
+
+  <section>
+    <!-- Recipe Input Form -->
+    <form id="recipeForm">
+      <label for="recipeName">Recipe Name:</label>
+      <input type="text" id="recipeName" name="recipeName" required>
+
+      <label for="ingredients">Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+      <label for="preparation">Preparation Steps:</label>
+      <textarea id="preparation" name="preparation" rows="4" required></textarea>
+
+      <label for="image">Image:</label>
+      <input type="file" id="image" name="image">
+
+      <button type="button" onclick="addRecipe()">Add Recipe</button>
+    </form>
+
+    <!-- Recipe Display Section -->
+    <div id="recipeList"></div>
+  </section>
+
+  <!-- Recipe Details Modal -->
+  <div id="recipeDetailsModal" class="recipe-details">
+    <!-- Content dynamically added using JavaScript -->
+  </div>
+
+  <script>
+    // JavaScript code for adding recipes, displaying recipes, and handling details
+    // Use localStorage or any other preferred method for data persistence
+
+    function addRecipe() {
+      // Implement logic to retrieve form data, validate, and add to the Recipe Book
+      // Update the displayed recipes as needed
+    }
+
+    // More JavaScript code for displaying recipes, handling details, and search functionality
+
+  </script>
+
+</body>
+</html>
